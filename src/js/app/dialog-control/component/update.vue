@@ -46,7 +46,7 @@
                            class="form-control"
                            v-model="form.dialogTitle"
                            @blur="touch('dialogTitle')"
-                           maxlength="6"/>
+                           maxlength="10"/>
                 </div>
                 <div class="col-sm-3 text-danger form-control-static"
                      v-if="formTouched.dialogTitle && !validation.dialogTitle.required">
@@ -63,7 +63,7 @@
                            class="form-control"
                            v-model="form.dialogText"
                            @blur="touch('dialogText')"
-                           maxlength="50" style="resize:none"></textarea>
+                           maxlength="300" style="resize:none"></textarea>
                 </div>
                 <div class="col-sm-3 text-danger form-control-static"
                      v-if="formTouched.dialogText && !validation.dialogText.required">

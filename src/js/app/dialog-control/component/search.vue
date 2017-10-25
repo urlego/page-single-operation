@@ -16,7 +16,7 @@
                    <div class="form-group form-group-sm">
                        <label class="col-sm-4 control-label">标题</label>
                        <div class="col-sm-8">
-                           <input type="text" class="form-control" maxlength="6" v-model="form.dialogTitle">
+                           <input type="text" class="form-control" maxlength="10" v-model="form.dialogTitle">
                        </div>
                    </div>
                 </div>
