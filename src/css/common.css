@@ -1,0 +1,6 @@
+.hr-sm{
+    border-style:dashed;
+}
+.dl-horizontal dd{
+    word-wrap: break-word;
+}
