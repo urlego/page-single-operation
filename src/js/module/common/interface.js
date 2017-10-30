@@ -7,11 +7,6 @@
  * 开发时请咨询后端开发，根据实际情况进行判断环境(环境判断逻辑可修改，!!!请注意)
  *
  */
-
-//开发：tcysys2.admin.ct108.org:5505
-//测试、内测：tcysys.admin.ct108.org:1505
-//预发：tcyapp.admin.ct108.net:8001
-//正式：tcyapp.admin.ct108.net
 import utility from 'ct-utility';
 var getEnv = function() {
     let env = '';
@@ -61,16 +56,16 @@ var Interface = {
     }),
     pre: utility.base.extend(true, {}, base, {
         common: {
-            getTcyVersion: 'http://tcysys.admin.ct108.net:8001/ModelRule/GetTcyVersion',
-            getTcyTagFatherList: 'http://tcysys.admin.ct108.net:8001/TcyTag/GetTcyTagFatherList',
-            currencyAppList: 'http://tcysys.admin.ct108.net:8001/newapp/CurrencyAppList'
+            getTcyVersion: 'http://tcyapp.admin.ct108.net:8001/ModelRule/GetTcyVersion',
+            getTcyTagFatherList: 'http://tcyapp.admin.ct108.net:8001/TcyTag/GetTcyTagFatherList',
+            currencyAppList: 'http://tcyapp.admin.ct108.net:8001/newapp/CurrencyAppList'
         }
     }),
     official: utility.base.extend(true, {}, base, {
         common: {
-            getTcyVersion: 'http://tcysys.admin.ct108.net/ModelRule/GetTcyVersion',
-            getTcyTagFatherList: 'http://tcysys.admin.ct108.net/TcyTag/GetTcyTagFatherList',
-            currencyAppList: 'http://tcysys.admin.ct108.net/newapp/CurrencyAppList'
+            getTcyVersion: 'http://tcyapp.admin.ct108.net/ModelRule/GetTcyVersion',
+            getTcyTagFatherList: 'http://tcyapp.admin.ct108.net/TcyTag/GetTcyTagFatherList',
+            currencyAppList: 'http://tcyapp.admin.ct108.net/newapp/CurrencyAppList'
         }
     })
 };
